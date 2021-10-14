@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WEB2FA - Web based one-time password generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Pure Two-Factor Authentication</h1>
+  <div class="tab-wrap">
+
+    <input type="radio" name="tabs" id="tab1" checked>
+    <div class="tab-label-content" id="tab1-content">
+      <label for="tab1">Security</label>
+      <div class="tab-content">
+        <h3>Decrypt localStorage</h3>
+        <p>Password:</p>
+        <p><input type="password" id="pwd" name="pwd" placeholder="password" /></p>
+        <p>
+          <select id="hash-name">
+            <option value="SHA-1">SHA-1</option>
+            <option value="SHA-256">SHA-256</option>
+            <option value="SHA-384">SHA-384</option>
+            <option value="SHA-512" selected>SHA-512</option>
+          </select>
+          <input id="decrypt" type="button" value="Decrypt" />
+          <input id="clear" type="button" value="Clear Session" />
+        </p>
+      </div>
+    </div>
+
+    <input type="radio" name="tabs" id="tab2" disabled="disabled">
+    <div class="tab-label-content" id="tab2-content">
+      <label for="tab2">Wallet</label>
+      <div class="tab-content">
+        TAB 2 - Quisque egestas, purus in tempor vulputate, diam augue mollis quam, quis elementum ipsum ex a risus. Quisque sed augue porta, facilisis felis vitae, cursus mi. Nullam mollis magna eget tincidunt mollis. Sed suscipit placerat
+        ultricies. Sed eget lorem et ipsum ultricies congue eu a enim. Nam quis ex nec lorem dignissim suscipit eu ut felis. Vivamus molestie felis id purus congue, vel ultrices sem molestie.
+      </div>
+    </div>
+
+    <input type="radio" name="tabs" id="tab3">
+    <div class="tab-label-content" id="tab3-content">
+      <label for="tab3">Configuration</label>
+      <div class="tab-content">
+        TAB 3 - Donec vulputate ante ac ligula vestibulum, id mollis diam commodo. Integer at consequat magna. Sed elit sem, dictum nec porttitor ac, ultrices id enim. Morbi semper eros a enim malesuada, eu finibus erat dictum. Ut vitae orci a odio
+        sagittis malesuada. Cras volutpat vel lorem in tempor. Duis ultricies lectus sit amet tellus vehicula faucibus. Etiam sed leo ac erat tempor feugiat at quis ipsum. Mauris pellentesque nisl lorem, ac finibus sapien sagittis vel. Donec et
+        lobortis est. Vestibulum dignissim ligula nec erat interdum, quis sollicitudin metus pretium. Vestibulum quis dui sapien. Proin commodo justo ac orci elementum molestie. Aliquam mattis orci vitae volutpat commodo.
+      </div>
+    </div>
+
+    <input type="radio" name="tabs" id="tab4">
+    <div class="tab-label-content" id="tab4-content">
+      <label for="tab4">About</label>
+      <div class="tab-content">
+        TAB 4 - Quisque egestas, purus in tempor vulputate, diam augue mollis quam, quis elementum ipsum ex a risus. Quisque sed augue porta, facilisis felis vitae, cursus mi. Nullam mollis magna eget tincidunt mollis. Sed suscipit placerat
+        ultricies. Sed eget lorem et ipsum ultricies congue eu a enim. Nam quis ex nec lorem dignissim suscipit eu ut felis. Vivamus molestie felis id purus congue, vel ultrices sem molestie.
+      </div>
+    </div>
+
+    <div class="slide"></div>
+
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
