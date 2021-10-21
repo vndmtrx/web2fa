@@ -136,6 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     return;
   }
 
+  // Check that storage API is also available
   if (!storageAvailable('localStorage') || !storageAvailable('sessionStorage')) {
     alert("Your browser does not have LocalStorage supported and available! This page will not work.");
     return;
